@@ -18,5 +18,6 @@ Scanner sc = new Scanner(System.in);
 System.out.println("Vnesete visina ");
 int visina = sc.nextInt();
 System.out.printf("Pospesek je enak %f", Gravitacija.pospesek(visina));
+System.out.printf("Visina je enaka %f", Gravitacija.visina(visina));
 }
 }
