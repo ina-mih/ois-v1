@@ -1,17 +1,22 @@
+import java.lang.Math;
 import java.util.Scanner;
-
 public class Gravitacija {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		double c = 0.00000000006674;
-		double m_earth = 5972000000000000000000000.00;
-		double r = 6371000.00;
-		double v = sc.nextInt();
-		
-		double a = (c * m_earth)/((r+v)*(r+v));
-		System.out.println(a);
-		
-	}
-	
+
+public static double pospesek (double v){
+
+
+double M = 5.972 * Math.pow(10,24);
+double C = 6.674 * Math.pow(10,-11);
+double r = 6.371 * Math.pow(10, 6);
+
+double a = (C * M )/((r+v)*(r+v));
+return a ;
+}
+public static void main(String [] args){
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Vnesete visina ");
+int visina = sc.nextInt();
+System.out.printf("Pospesek je enak %f", Gravitacija.pospesek(visina));
+}
 }
