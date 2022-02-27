@@ -19,6 +19,6 @@ System.out.println("Vnesete visina ");
 int visina = sc.nextInt();
 System.out.printf("Pospesek je enak %f", Gravitacija.pospesek(visina));
 System.out.printf("Visina je enaka %f", visina);
-System.out.printf("Gravitacijski pospesek je enak%f", M);
+System.out.printf("Gravitacijski pospesek je enak%f", a);
 }
 }
